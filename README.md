@@ -81,7 +81,7 @@ Contributions are welcome! If you have ideas for new features, bug-fixes or enha
 
 ## 👤 Author
 
-**Sajak Shrestha** — student & developer —  
+**Sajak Shrestha** — developer —  
 If you want to reach me or collaborate, feel free to open issues or pull requests.
 
 ---
