@@ -1,6 +1,6 @@
 
-- `client/`: code for initiating connection and sending files.  
-- `server/`: code for accepting connections and writing incoming files to disk.
+- `sender/`: code for initiating connection and sending files.  
+- `receiver/`: code for accepting connections and writing incoming files to disk.
 
 ---
 
@@ -13,20 +13,20 @@
 
 ### Setup & Usage  
 
-1. **On the server device**  
-   - Navigate to `server/`.  
+1. **On the sender device**  
+   - Navigate to `sender/`.  
    - Install dependencies (if any).  
-   - Start the server, e.g. `node server.js`.  
+   - Start the server, e.g. `node index.js`.  
    - The server will listen on a specified port (update in code/config if required).  
 
-2. **On the client device**  
-   - Navigate to `client/`.  
+2. **On the receiver device**  
+   - Navigate to `receiver/`.  
    - Install dependencies (if any).  
-   - Run the client specifying the server’s IP address and port, and the file(s) to send, e.g.  
+   - Run the receiver e.g.  
      ```bash
-     node client.js 192.168.1.10 3000 sample.pdf
+     node index.js
      ```  
-   - The client connects to the server and sends the file.  
+   - The receiver connects to the sender and sends the file.  
 
 3. **On the server**  
    - The file arrives, and is stored in a designated folder (e.g., `received/`).  
